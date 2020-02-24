@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.contenedor {
+  padding: 60px 0;
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+.titulo {
+  color: #b35114;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+header {
+  width: 100%;
+  height: 500px;
+  background: #30e8bf; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff8235,
+    hsla(167, 80%, 55%, 0.685)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff8235, hsla(167, 80%, 55%, 0.623)),
+    url(../img/SxotdD.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+nav {
+  height: 40px;
+  text-align: right;
+  padding: 20px 10px 0 0;
+}
+nav a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+  margin-right: 20px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+header .txt-header {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* text-align: center; */
+}
+.txt-header h1 {
+  font-size: 50px;
+  color: #fff;
+}
+.txt-header h2 {
+  font-size: 30px;
+  font-weight: 200;
+  color: #fff;
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.img-perfil {
+  background: red;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  /* top: 500px; */
+  bottom: 0;
+  left: 20px;
+  display: flex;
+  /* justify-content: start; */
+  /* align-items: flex-start; */
+}
+.img-perfil img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Sobre mi */
+.sobre-mi {
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+}
+.contenido-sobre-mi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+.contenido-sobre-mi .txt-sobre-mi {
+  width: 48%;
+}
+.contenido-sobre-mi .imagen-sobre-mi {
+  width: 48%;
+}
+.txt-sobre-mi h3 {
+  font-size: 20px;
+  color: #02aeb3;
+  padding-left: 10px;
+}
+.txt-sobre-mi h3 span {
+  background: #02aeb3;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  padding: 3px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  margin-right: 7px;
+}
+.txt-sobre-mi p {
+  padding: 5px 5px 20px 5px;
+  text-align: justify;
+}
+.txt-sobre-mi a {
+  color: #ff924f;
+}
+
+/* Galeria */
+.galeria {
+  background: #f2f2f2;
+}
+.fotos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.imagen {
+  width: 24%;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.hover-foto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: scale(0);
+  transition: transform 0.5s;
+  background: hsla(181, 100%, 61%, 0.61);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hover-foto img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.hover-foto p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.imagen:hover .hover-foto {
+  transform: scale(1);
+}
+.mas-fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mas-fotos a {
+  margin: 10px;
+  color: #ff8336;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #ff8336;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedor-footer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-bottom: 2px solid #b35114;
+}
+.contenedor-footer .foo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.foo a {
+  color: #fff;
+  padding-bottom: 5px;
+}
+.foo img {
+  width: 30px;
+  height: 30px;
+margin: 5px;
+}
+.final-foo {
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
