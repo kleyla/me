@@ -28,7 +28,7 @@ header {
     hsla(167, 80%, 55%, 0.685)
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ff8235, hsla(167, 80%, 55%, 0.623)),
-    url(../img/SxotdD.jpg);
+    url(../img/me/toborochihf.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -149,10 +149,13 @@ header .txt-header {
   cursor: pointer;
   overflow: hidden;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  /* display: flex; */
+  /* align-items: center; */
+  align-self: center;
 }
 .imagen img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -192,6 +195,50 @@ header .txt-header {
   color: #ff8336;
   text-decoration: none;
 }
+.modal {
+  display: none;
+}
+
+.modal:target {
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal h3 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px 0;
+}
+.imagen-modal {
+  width: 500px;
+  height: auto;
+}
+.imagen-modal img {
+  width: 100%;
+  height: 100%;
+}
+.cerrar {
+  display: inline-block;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 20px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000;
+  padding: 10px;
+  border-radius: 50%;
+}
 /* Gossip */
 .gossip {
   display: flex;
@@ -207,13 +254,15 @@ header .txt-header {
   padding: 10px;
   border-radius: 5%;
   border: 2px solid #000;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.5);
 }
 .gossip-box img {
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 5%;
 }
 .gossip-box p {
+    padding: 10px;
   text-align: justify;
 }
 /* Footer */
