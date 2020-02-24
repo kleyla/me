@@ -7,16 +7,16 @@ body {
   font-family: sans-serif;
 }
 .contenedor {
-  padding: 60px 0;
+  padding: 30px 0;
   width: 90%;
   margin: auto;
   overflow: hidden;
 }
 .titulo {
   color: #b35114;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 header {
   width: 100%;
@@ -49,7 +49,7 @@ nav a:hover {
 }
 header .txt-header {
   width: 100%;
-  height: 430px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,11 +57,11 @@ header .txt-header {
   /* text-align: center; */
 }
 .txt-header h1 {
-  font-size: 50px;
+  font-size: 70px;
   color: #fff;
 }
 .txt-header h2 {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 200;
   color: #fff;
 }
@@ -72,7 +72,7 @@ header .txt-header {
 }
 
 .img-perfil {
-  background: red;
+  /* background: red; */
   width: 300px;
   height: auto;
   position: absolute;
@@ -192,7 +192,30 @@ header .txt-header {
   color: #ff8336;
   text-decoration: none;
 }
-
+/* Gossip */
+.gossip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.gossip .gossip-box {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5%;
+  border: 2px solid #000;
+}
+.gossip-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.gossip-box p {
+  text-align: justify;
+}
 /* Footer */
 footer {
   background: #ff8336;
@@ -224,10 +247,121 @@ footer {
 .foo img {
   width: 30px;
   height: 30px;
-margin: 5px;
+  margin: 5px;
 }
 .final-foo {
   padding: 20px;
   text-align: center;
   color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  .titulo {
+    font-size: 30px;
+  }
+  .contenedor {
+    padding: 20px 0;
+  }
+  header {
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+  }
+  header .txt-header {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 40px;
+  }
+  .txt-header h1 {
+    font-size: 50px;
+  }
+  .txt-header h2 {
+    font-size: 40px;
+  }
+  .img-perfil {
+    width: 200px;
+    height: auto;
+  }
+  /* Sobre mi */
+  .contenido-sobre-mi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido-sobre-mi .txt-sobre-mi {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contenido-sobre-mi .imagen-sobre-mi {
+    width: 100%;
+  }
+  /* Galeria */
+  .imagen {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .hover-foto img {
+    width: 80px;
+  }
+  .hover-foto p {
+    font-size: 20px;
+  }
+  /* Gossip */
+  .gossip .gossip-box {
+    width: 35%;
+    margin-bottom: 20px;
+  }
+  .contenedor-footer {
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .contenedor-footer .foo {
+    width: 45%;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header {
+    height: 400px;
+  }
+  nav a {
+    margin-right: 10px;
+  }
+  header .txt-header {
+    height: 200px;
+  }
+  .txt-header h1 {
+    font-size: 40px;
+  }
+  .txt-header h2 {
+    font-size: 30px;
+  }
+  .contenido-sobre-mi {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido-sobre-mi .txt-sobre-mi {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .contenido-sobre-mi .imagen-sobre-mi {
+    width: 100%;
+  }
+  .imagen {
+    width: 46%;
+  }
+  .hover-foto img {
+    width: 50px;
+  }
+  .hover-foto p {
+    font-size: 15px;
+  }
+  /* Gossip */
+  .gossip .gossip-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
