@@ -24,10 +24,10 @@ header {
   background: #30e8bf; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #ff8235,
+    hsla(23, 100%, 60%, 0.692),
     hsla(167, 80%, 55%, 0.685)
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ff8235, hsla(167, 80%, 55%, 0.623)),
+  background: linear-gradient(to right, hsla(23, 100%, 60%, 0.698), hsla(167, 80%, 55%, 0.623)),
     url(../img/me/toborochihf.jpg);
   background-size: cover;
   background-attachment: fixed;
