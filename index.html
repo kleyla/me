@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kleyla</title>
     <link rel="shortcut icon" href="img/desarrollo-web.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de mi</a>
+            <a onclick="focusTo('inicio')">Inicio</a>
+            <a onclick="focusTo('fotos')">Acerca de mi</a>
             <a href="#">Mi carrera</a>
             <a href="#">Contactos</a>
         </nav>
@@ -33,7 +33,7 @@
         </div>
     </header>
     <main>
-        <section class="contenedor sobre-mi">
+        <section class="contenedor sobre-mi" id="inicio">
             <h2 class="titulo">Sobre mi</h2>
             <div class="contenido-sobre-mi">
                 <div class="txt-sobre-mi">
@@ -52,7 +52,7 @@
                 <img src="img/me/hackmeetonglp.jpg" alt="" class="imagen-sobre-mi">
             </div>
         </section>
-        <section class="galeria">
+        <section class="galeria" id="fotos">
             <div class="contenedor">
                 <h2 class="titulo">Mis fotos</h2>
                 <div class="fotos">
@@ -169,6 +169,7 @@
         </div>
     </footer>
 
+    <script src="assets/app.js"></script>
 </body>
 
 </html>
